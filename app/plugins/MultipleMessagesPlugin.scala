@@ -18,6 +18,9 @@ import scalax.io.JavaConverters._
  *  plugin.multiplemessages.additional.files="more-messages,even-more-messages"
  *
  * Messages will then be loaded from these additional files, as well as the standard messages.xxx files. 
+ *
+ * NOTE: This class is declared in package play.api.i18n because use of the MessagesParser is restricted to classes in
+ * said package.  
  */
 class MultipleMessagesPlugin(app: Application) extends MessagesPlugin(app) {
 
